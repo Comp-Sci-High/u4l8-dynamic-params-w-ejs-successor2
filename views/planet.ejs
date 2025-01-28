@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Use the name key to set the tab name -->
-  <title>... Info</title>
+  <title><%= name %> Info</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -47,12 +47,12 @@
 <body>
   <div class="planet-container">
     <!-- Use the name key to set the title -->
-    <h1>Explore ...</h1>
+    <h1>Explore <%= name %></h1>
     <!-- Use the imagePath key to set the img src -->
-    <img src="..." class="planet-image" />
+    <img src="<%= imagePath %>" class="planet-image" />
     
     <!-- Use the description key to set the p tag -->
-    <p class="description">...</p>
+    <p class="description"><%= description %></p>
 
     <table>
       <thead>
@@ -65,17 +65,17 @@
         <tr>
           <td>Distance from Sun (km)</td>
         <!-- Use the distance key to set the td tag -->
-          <td>...</td>
+          <td><%= distance %></td>
         </tr>
         <tr>
           <td>Diameter (km)</td>
           <!-- Use the diameter key to set the td tag -->
-          <td>...</td>
+          <td><%= diameter %></td>
         </tr>
         <tr>
           <td>Orbital Period (Days)</td>
           <!-- Use the orbital key to set the td tag -->
-          <td>...</td>
+          <td><%= orbital %></td>
         </tr>
       </tbody>
     </table>
